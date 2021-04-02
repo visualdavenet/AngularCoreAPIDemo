@@ -6,7 +6,9 @@ import {Observable} from 'rxjs';
   providedIn: 'root'
 })
 export class SharedService {
-  readonly APIUrl="https://randomuser.me/api/?results=8";
+  readonly randomNum = Math.floor(Math.random() * 10) + 8;
+  readonly APIUrl = "https://randomuser.me/api/?results=" + this.randomNum;
+
   constructor(private http:HttpClient) { }
 
   getPeopleList():Observable<any[]>{

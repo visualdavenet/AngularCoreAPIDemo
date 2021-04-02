@@ -1,0 +1,22 @@
+header {
+  position: relative;
+  background-size: cover;
+  background-image: url('../../assets/bg.jpg');
+  background-repeat: no-repeat;
+  height: 120vh;
+  min-height: 120vh;
+  min-width: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header .overlay {
+  position: initial;
+  top: 0;
+  left: 200px;
+  height: 100%;
+  width: auto;
+  opacity: 1.8;
+  z-index: 1;
+}

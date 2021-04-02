@@ -1,0 +1,12 @@
+  <div class="container" style="margin-top: 60px;">
+  <div class="row col-lg-12">
+      <div *ngFor="let dataItem of PeopleList.results" class="card zoom wow bounceInUp shadow col-lg-3" style="width: 16rem; border-radius:15px;">
+        <div class="card-body text-center">
+            <img src="{{ dataItem.picture.large }}" class="rounded-circle">
+            <h5 class="card-title">{{ dataItem.name.first }} {{ dataItem.name.last }}  {{ dataItem.propertyid }}</h5>
+            <h6 class="card-title">{{ dataItem.location.country }}</h6>
+            <a href="mailto:{{ dataItem.email }}" style="font-size:13px;">{{ dataItem.email }}</a>
+        </div>
+      </div>
+  </div>
+</div>

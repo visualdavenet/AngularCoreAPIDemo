@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { SharedService } from 'src/app/shared.service';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'app-card',
+  templateUrl: './card.component.html',
+  styleUrls: ['./card.component.css']
 })
-export class HomeComponent implements OnInit {
+export class CardComponent implements OnInit {
 
   constructor(private service:SharedService) { }
 
@@ -21,4 +21,5 @@ export class HomeComponent implements OnInit {
   refreshPeopleList(){
     this.service.getPeopleList().subscribe(data=>{ this.PeopleList=data; });
   }
+
 }

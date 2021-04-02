@@ -6,6 +6,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { SharedService } from 'src/app/shared.service';
+import { CardComponent } from './card/card.component';
+import { StartupComponent } from './startup/startup.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule} from '@angular/forms';
@@ -13,7 +15,9 @@ import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    CardComponent,
+    StartupComponent
   ],
   imports: [
     BrowserModule,
