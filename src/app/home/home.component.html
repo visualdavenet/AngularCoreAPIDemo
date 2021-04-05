@@ -1,23 +1,24 @@
-<div class="container pt-3">
+<div class="container mt-70 card shadow">
+  <div class="container text-center m-3">
+    <h1 class="card-title">Data From .NET Core SQL Server API</h1>
+  </div>
   <table class="table">
     <thead>
       <tr>
         <th></th>
-        <th>Name</th>
-        <th>Username</th>
-        <th>Age</th>
-        <th>Phone</th>
-        <th>Email</th>
+        <th class="text-center">Property ID</th>
+        <th>Property Title</th>
+        <th>Description</th>
+        <th>Price</th>
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let dataItem of PeopleList.results">
-        <td><img class="rounded-circle" src="{{ dataItem.picture.medium }}"></td>
-        <td>{{ dataItem.name.first }} {{ dataItem.name.last }}</td>
-        <td>{{ dataItem.login.username }}</td>
-        <td>{{ dataItem.dob.age }}</td>
-        <td>{{ dataItem.phone }}</td>
-        <td><a href="mailto:{{ dataItem.email }}">{{ dataItem.email }}</a></td>
+      <tr *ngFor="let dataItem of PropertyList">
+        <td class="text-center"><img style="width:75px; height:75px;" src="../../assets/house-icon.png"></td>
+        <td class="text-center">{{ dataItem.propertyID }}</td>
+        <td>{{ dataItem.title }}</td>
+        <td>{{ dataItem.description }}</td>
+        <td>{{ dataItem.price }}</td>
       </tr>
     </tbody>
   </table>
